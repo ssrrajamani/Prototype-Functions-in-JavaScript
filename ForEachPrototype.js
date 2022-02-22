@@ -4,7 +4,7 @@ by applying the callback function on each element of an array, while the forEach
 doesn't return anything.
 */
 
-Array.prototype.ForEachPrototype=function(callback){
+Array.prototype.forEachPrototype=function(callback){
   for(let i=0;i<this.length;i++)
     this[i]=callback(this[i]);
 }
@@ -14,5 +14,5 @@ function multiplyByTwo(value){
 }
 
 const array=[10,20,30,40];
-array.ForEachPrototype(multiplyByTwo);
+array.forEachPrototype(multiplyByTwo);
 console.log(array);
